@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+h2 {
+font-size : 30px;
+color : green;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+</head>
+<body>
+<center>
+<br>
+<h1> Check the Number is armstrong or Not</h1>
+<br>
+<h3> 
+<label>Enter A number:<input type="text" id="num"></label>
+<button onclick="Myfun()">Check</button>
+<p id="my"></p>
+<script>
+function Myfun()
+{
+var numb = document.getElementById("num").value;
+var r,x,sum=0;
+x=parseInt(numb);
+while(x>0)
+{
+r=x%10;
+x=parseInt(x/10);
+sum=sum+(r*r*r);
+}
+if(parseInt(numb)==sum)
+{
+document.getElementById("my").innerHTML =numb + " is an armstrong number" ;
+}
+else
+{
+document.getElementById("my").innerHTML =numb + " is not an amstrong number";
+}
+}
+</script>

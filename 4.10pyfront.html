@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>h2 {
+font-size : 20px;
+color : Blue;
+font-weight : bold;
+
+}
+h1{
+color:red;
+text-decoration:underline;}
+</style>
+</head>
+<body><center>
+<br>
+<br>
+<h1> Py in the front of string</h1>
+<label><h2>Enter A string:<input type="text" name="txt1" id="txt"></h2></label><br>
+<br>
+<button onclick="pyfnt()">find</button>
+<p id="m"></p>
+<script>
+function pyfnt() {
+var str=document.getElementById("txt").value;
+if (str.substring(0, 2) === "Py" || str.substring(0, 2) === "py"|| str.substring(0,2)=== "PY"||str.substring === null) 
+{
+document.getElementById("m").innerHTML = str;
+}
+else{
+document.getElementById("m").innerHTML = "Py"+str;
+}
+}
+</script></center>
+</body>
+</html>

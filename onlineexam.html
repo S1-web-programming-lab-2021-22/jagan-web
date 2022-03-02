@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color : red;
+color : white;
+}
+h2{
+font-size : 30px;
+color : white;
+font-weight : bold;}
+
+.button{
+background-color : orange;
+border : none;
+color : white;
+text-decoration : bold;
+padding : 10px 20px;
+font-size : 16px;
+margin : 4px 2px;
+cursor : pointer;
+}
+.div{ background-color:blue; margin:10px; }
+</style>
+</head>
+<body>
+<center>
+<h1> Online Exam portal </h1>
+<h2>
+<label>Enter Candiate Name :<input type="text" id="fname"></label><br>
+<label>Candiate DOB:<input type="date" id="DOB"></label></h2><br>
+<span id = "free" style="color:green"> </span> <br><br> 
+<button onclick="fname();">Submit</button><br>
+<span id="my"></span><br><br>
+<span id="mr"></span>
+<script>
+function fname() {
+var x=document.getElementById("fname").value;
+var y=document.getElementById("DOB").value;
+document.getElementById("my").innerHTML=x
+document.getElementById("mr").innerHTML=y}
+</script>
+<div class="div"><font size="4" face="Cooper"><h1 align="center">Questions</h1></font></div>
+		<table class="table" style="width:1000px" align="center" cellpadding ="20">
+			<tr>
+				<th>1.</th>
+				<td></td>
+				<td>
+            <input type="radio" name="question1" value="a">
+            a)
+            <br>
+            <input type="radio" name="question1" value="b">
+            b) <br>
+            <input type="radio" name="question1" value="c">
+            c)
+            <br>
+            <input type="radio" name="question1" value="d">
+            d)
+            <br>
+            <br></td>
+				
+			</tr>
+			<tr>
+				<th>2.</th>
+				<td></td>
+<td>
+            <input type="radio" name="question2" value="a">
+            a)
+            <br>
+            <input type="radio" name="question2" value="b">
+            b) <br>
+            <input type="radio" name="question2" value="c">
+            c)
+            <br>
+            <input type="radio" name="question2" value="d">
+            d)
+            <br>
+            <br></td>
+			</tr>
+			<tr>
+				<th>3.</th>
+				<td></td>
+<td>
+            <input type="radio" name="question3" value="a">
+            a)
+            <br>
+            <input type="radio" name="question3" value="b">
+            b) <br>
+            <input type="radio" name="question3" value="c">
+            c)
+            <br>
+            <input type="radio" name="question3" value="d">
+            d)
+            <br>
+            <br></td>
+			</tr>
+			<tr>
+				<th>4.</th>
+				<td></td>
+<td>
+            <input type="radio" name="question4" value="a">
+            a)
+            <br>
+            <input type="radio" name="question4" value="b">
+            b) <br>
+            <input type="radio" name="question4" value="c">
+            c)
+            <br>
+            <input type="radio" name="question4" value="d">
+            d)
+            <br>
+            <br></td>
+			<tr>
+				<th>5.</th>
+				<td></td>
+<td>
+            <input type="radio" name="question5" value="a">
+            a)
+            <br>
+            <input type="radio" name="question5" value="b">
+            b) <br>
+            <input type="radio" name="question5" value="c">
+            c)
+            <br>
+            <input type="radio" name="question5" value="d">
+            d)
+            <br>
+            <br></td>
+			</tr>
+			<tr>
+				<th>6.</th>
+				<td></td>
+<td>
+            <input type="radio" name="question6" value="a">
+            a)
+            <br>
+            <input type="radio" name="question6" value="b">
+            b) <br>
+            <input type="radio" name="question6" value="c">
+            c)
+            <br>
+            <input type="radio" name="question6" value="d">
+            d)
+            <br>
+            <br></td>
+			</tr>
+			 	<tr>
+				<th>7.</th>
+				<td></td>
+<td>
+            <input type="radio" name="question7" value="a">
+            a)
+            <br>
+            <input type="radio" name="question7" value="b">
+            b) <br>
+            <input type="radio" name="question7" value="c">
+            c)
+            <br>
+            <input type="radio" name="question7" value="d">
+            d)
+            <br>
+            <br></tr>
+<tr><th><td><center>
+		<input class="button" type="submit" name="submit" value="Final Submit"></center></td></th></tr>
+</table>
+</body>
+</html>
+            

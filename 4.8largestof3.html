@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+h1{
+font-size : 30px;
+color : blue;
+font-weight : bold;
+text-decoration : underline;}
+h2{font-size : 20px;
+color : green;
+font-weight : bold;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Largest Of 3 numbers</h1>
+<h2><label>Enter The First element:<input type="text" id="val1"></label><br></h2>
+<h2><label>Enter The Second element:<input type="text" id="val2"></label><br></h2>
+<h2><label>Enter The Thrid element:<input type="text" id="val3"></label><br></h2>
+<button onclick="check()">Find</button>
+<p id="my"></p>
+<script>
+function check()
+{
+var a = document.getElementById("val1").value;
+var b = document.getElementById("val2").value;
+var c = document.getElementById("val3").value;
+var p = parseFloat(a)
+var q = parseFloat(b)
+var r = parseFloat(c)
+if (p > q && p > r) { 	
+document.getElementById("my").innerHTML = a + " is the largest";
+}
+else if(q > p && q > r)
+{
+document.getElementById("my").innerHTML = b + " is the largest";
+}
+else{
+document.getElementById("my").innerHTML = c + " is the largest";
+}
+}
+</script>
+</center>
+</body>
+</html>

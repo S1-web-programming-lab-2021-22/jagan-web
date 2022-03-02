@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+h2 {
+font-size : 30px;
+color : yellow;
+font-weight : bold;}
+</style>
+
+</head>
+<body>
+<center>
+
+<h2>Check Positive or Negative number</h2>
+<br> 
+<label> Enter A Number:<input type="text" id="num"></label>
+<button onclick="checker()">Check</button>
+<p id="pos"></p>
+</center>
+<script>
+function checker() {
+var x = document.getElementById("num").value;
+if(x > 0)
+{document.getElementById("pos").innerHTML = x + " is  a Positive number"
+}
+else
+{
+document.getElementById("pos").innerHTML = x + " is a Negative number"
+}
+}
+</script>
+</center>
+</body>
+</html>
+

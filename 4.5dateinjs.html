@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+h2 {
+font-size : 30px;
+color : green;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+</head>
+<body>
+<center>
+
+<br>
+<h2><u>Current Date</u></h2>
+<br>
+<button onclick="today()">Today</button>
+<p id="date"></p>
+
+<script>
+function today(){
+var d = new Date();
+document.getElementById("date").innerHTML = d;}
+</script>
+
+</center>
+</body>
+</html>
