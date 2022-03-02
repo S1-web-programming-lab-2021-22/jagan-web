@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+h2 {
+font-size : 30px;
+color : red;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+</head>
+<body>
+<center>
+
+<br>
+<h2><u>Postive OR Negative</u></h2>
+<br>
+Enter A number<input type="text" id="num">
+<button onclick="casef()">Check</button>
+<p id="m"></p>
+<script>
+function casef(){
+var x = document.getElementById("num").value;
+if (x > 0) {
+document.getElementById("m").innerHTML = x + " is a positive number"
+} 
+else if (x < 0) {
+document.getElementById("m").innerHTML = x + " is a negative number"
+} 
+else {
+alert("you have entered 0 or character value")
+}
+}
+</script>
+</center>
+</body>
+</html>
